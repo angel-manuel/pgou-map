@@ -18,3 +18,7 @@ data-pipeline/.cache/
 # Env
 .env
 .env.local
+.vercel
+
+# Playwright dev artifacts
+.playwright-mcp/

@@ -32,8 +32,104 @@ export function createAllMunicipios(root) {
     const buttonsBySlug = new Map();
     let entries = [];
     let entriesBySlug = new Map();
+    let renderedOrder = []; // slugs currently shown in the list
+    const selection = new Map();
+    let anchorSlug = null;
+    let onChange = null;
     const listId = "all-muni-list";
-    function renderList(query, onSelect) {
+    function resolve(slug) {
+        if (slug in OVERRIDES)
+            return OVERRIDES[slug];
+        const e = entriesBySlug.get(slug);
+        return e ? pilotFromIndex(e) : null;
+    }
+    function emit() {
+        onChange?.(selection);
+    }
+    function syncButtonsActive() {
+        for (const [k, btn] of buttonsBySlug) {
+            btn.classList.toggle("active", selection.has(k));
+        }
+        updateStat();
+    }
+    function updateStat() {
+        const stat = root.querySelector("#all-muni-stat");
+        if (!stat)
+            return;
+        const totalShown = renderedOrder.length;
+        const selCount = selection.size;
+        stat.textContent =
+            selCount > 0
+                ? `${selCount} sel. · ${totalShown} de ${entries.length}`
+                : `${totalShown} de ${entries.length}`;
+    }
+    function selectOne(slug) {
+        selection.clear();
+        const m = resolve(slug);
+        if (m)
+            selection.set(slug, m);
+        anchorSlug = slug;
+        syncButtonsActive();
+        emit();
+    }
+    function toggle(slug) {
+        if (selection.has(slug)) {
+            selection.delete(slug);
+        }
+        else {
+            const m = resolve(slug);
+            if (m)
+                selection.set(slug, m);
+        }
+        anchorSlug = slug;
+        syncButtonsActive();
+        emit();
+    }
+    function selectRangeTo(slug) {
+        if (!anchorSlug || !renderedOrder.includes(anchorSlug)) {
+            // No anchor in current view → behave like a toggle.
+            toggle(slug);
+            return;
+        }
+        const a = renderedOrder.indexOf(anchorSlug);
+        const b = renderedOrder.indexOf(slug);
+        if (a === -1 || b === -1) {
+            toggle(slug);
+            return;
+        }
+        const [lo, hi] = a <= b ? [a, b] : [b, a];
+        for (let i = lo; i <= hi; i++) {
+            const s = renderedOrder[i];
+            if (!selection.has(s)) {
+                const m = resolve(s);
+                if (m)
+                    selection.set(s, m);
+            }
+        }
+        // anchor stays the same — standard range-extend behavior
+        syncButtonsActive();
+        emit();
+    }
+    function selectAllVisible() {
+        for (const s of renderedOrder) {
+            if (!selection.has(s)) {
+                const m = resolve(s);
+                if (m)
+                    selection.set(s, m);
+            }
+        }
+        syncButtonsActive();
+        emit();
+    }
+    function clearSelection() {
+        if (selection.size === 0)
+            return;
+        selection.clear();
+        anchorSlug = null;
+        syncButtonsActive();
+        emit();
+    }
+    function renderList(query) {
         const ul = root.querySelector(`#${listId}`);
         if (!ul)
             return;
@@ -43,9 +139,7 @@ export function createAllMunicipios(root) {
         const matched = q
             ? entries.filter((e) => e.name.toLowerCase().includes(q))
             : entries;
-        const stat = root.querySelector("#all-muni-stat");
-        if (stat)
-            stat.textContent = `${matched.length} de ${entries.length}`;
+        renderedOrder = matched.slice(0, 250).map((e) => e.slug);
         for (const e of matched.slice(0, 250)) {
             const li = document.createElement("li");
             li.style.listStyle = "none";
@@ -53,29 +147,47 @@ export function createAllMunicipios(root) {
             btn.className = "muni-button";
             btn.style.fontSize = "12px";
             btn.style.padding = "5px 8px";
+            btn.setAttribute("data-slug", e.slug);
             const isOverride = e.slug in OVERRIDES;
             const tag = isOverride
                 ? `<span style="float:right;font-size:9px;color:#52b3a4;border:1px solid #52b3a4;padding:0 4px;border-radius:3px">+detalle</span>`
                 : "";
             btn.innerHTML = `${e.name}  · ${e.feature_count}${tag}`;
             btn.title = `${e.documento ?? ""} · CAM ${e.cam_code}`;
-            btn.addEventListener("click", () => {
-                const m = OVERRIDES[e.slug] ?? pilotFromIndex(e);
-                onSelect(m, e);
+            btn.addEventListener("click", (ev) => {
+                const me = ev;
+                if (me.shiftKey) {
+                    selectRangeTo(e.slug);
+                }
+                else if (me.ctrlKey || me.metaKey) {
+                    toggle(e.slug);
+                }
+                else {
+                    selectOne(e.slug);
+                }
             });
             li.appendChild(btn);
             ul.appendChild(li);
             buttonsBySlug.set(e.slug, btn);
         }
+        syncButtonsActive();
     }
     return {
-        async mount(onSelect) {
+        async mount(onSelectionChange) {
+            onChange = onSelectionChange;
             root.innerHTML = `
         <h2>Municipios CAM</h2>
         <input type="search" id="all-muni-q" placeholder="Buscar municipio…"
           style="width:100%;padding:6px 8px;background:#11151c;color:inherit;border:1px solid #2a3140;border-radius:4px;font-size:12px;margin-bottom:6px">
+        <div style="display:flex;gap:6px;margin-bottom:6px">
+          <button type="button" id="all-muni-select-all" class="mini-button">Todos</button>
+          <button type="button" id="all-muni-clear" class="mini-button">Ninguno</button>
+        </div>
         <div style="font-size:11px;color:#9aa3b2;margin-bottom:6px">
           <span id="all-muni-stat">cargando…</span> · fuente SIT-CAM
+        </div>
+        <div style="font-size:10px;color:#6a7286;margin-bottom:6px;line-height:1.4">
+          Clic = uno · Ctrl/⌘+clic = añadir/quitar · Mayús+clic = rango · Ctrl/⌘+A = todos los visibles
         </div>
         <ul id="${listId}" style="margin:0;padding:0;max-height:320px;overflow-y:auto"></ul>
       `;
@@ -92,19 +204,42 @@ export function createAllMunicipios(root) {
                 return;
             }
             const input = root.querySelector("#all-muni-q");
-            input.addEventListener("input", () => renderList(input.value, onSelect));
-            renderList("", onSelect);
+            input.addEventListener("input", () => renderList(input.value));
+            const selAllBtn = root.querySelector("#all-muni-select-all");
+            const clearBtn = root.querySelector("#all-muni-clear");
+            selAllBtn.addEventListener("click", () => selectAllVisible());
+            clearBtn.addEventListener("click", () => clearSelection());
+            // Ctrl/Cmd+A while typing in the search input (or button focused inside this section)
+            // selects all currently visible.
+            root.addEventListener("keydown", (ev) => {
+                const ke = ev;
+                if ((ke.ctrlKey || ke.metaKey) && ke.key.toLowerCase() === "a") {
+                    ke.preventDefault();
+                    selectAllVisible();
+                }
+            });
+            renderList("");
         },
-        setActive(slug) {
-            for (const [k, btn] of buttonsBySlug) {
-                btn.classList.toggle("active", k === slug);
+        setSelection(slugs, anchor) {
+            selection.clear();
+            for (const s of slugs) {
+                const m = resolve(s);
+                if (m)
+                    selection.set(s, m);
             }
+            if (anchor !== undefined)
+                anchorSlug = anchor;
+            syncButtonsActive();
+            emit();
+        },
+        toggleSlug(slug) {
+            toggle(slug);
         },
         resolveBySlug(slug) {
-            if (slug in OVERRIDES)
-                return OVERRIDES[slug];
-            const e = entriesBySlug.get(slug);
-            return e ? pilotFromIndex(e) : null;
+            return resolve(slug);
+        },
+        getSelection() {
+            return selection;
         },
     };
 }

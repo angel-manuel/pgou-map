@@ -76,6 +76,18 @@ html, body, #app {
 }
 .muni-button[disabled] { opacity: 0.5; cursor: not-allowed; }
 
+.mini-button {
+  flex: 1;
+  padding: 4px 8px;
+  background: transparent;
+  color: var(--fg-dim);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+}
+.mini-button:hover { background: var(--panel); color: var(--fg); }
+
 .legend-row {
   display: flex;
   align-items: center;

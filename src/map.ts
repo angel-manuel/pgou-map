@@ -50,6 +50,7 @@ const SRC_RECONV = "reconvertible";
 
 const LYR_CAM_FILL = "cam-fill";
 const LYR_CAM_LINE = "cam-line";
+const LYR_CAM_LINE_HI = "cam-line-hi";
 const LYR_ZONES_FILL = "zones-fill";
 const LYR_ZONES_LINE = "zones-line";
 const LYR_DORMIDOS = "dormidos-outline";
@@ -73,6 +74,10 @@ function buildCalifFillColor(): maplibregl.DataDrivenPropertyValueSpecification<
   return expr as unknown as maplibregl.DataDrivenPropertyValueSpecification<string>;
 }
 
+function selectedExpr(slugs: string[]): maplibregl.ExpressionSpecification {
+  return ["in", ["get", "slug"], ["literal", slugs]] as unknown as maplibregl.ExpressionSpecification;
+}
+
 export function installLayers(map: Map, camMunicipios: FeatureCollection): void {
   map.addSource(SRC_CAM, { type: "geojson", data: camMunicipios });
   map.addSource(SRC_ZONES, { type: "geojson", data: EMPTY_FC });
@@ -86,15 +91,15 @@ export function installLayers(map: Map, camMunicipios: FeatureCollection): void 
     paint: {
       "fill-color": [
         "case",
-        ["==", ["get", "slug"], ["literal", ""]],
+        selectedExpr([]),
         "#6ea8fe",
         "#3a4252",
       ],
       "fill-opacity": [
         "case",
-        ["==", ["get", "slug"], ["literal", ""]],
+        selectedExpr([]),
         0.22,
-        0.06,
+        0.04,
       ],
     },
   });
@@ -103,18 +108,36 @@ export function installLayers(map: Map, camMunicipios: FeatureCollection): void 
     type: "line",
     source: SRC_CAM,
     paint: {
-      "line-color": [
-        "case",
-        ["==", ["get", "slug"], ["literal", ""]],
-        "#6ea8fe",
-        "#5a6275",
-      ],
+      "line-color": "#8a93a8",
       "line-width": [
-        "case",
-        ["==", ["get", "slug"], ["literal", ""]],
-        1.4,
-        0.4,
+        "interpolate",
+        ["linear"],
+        ["zoom"],
+        7, 0.6,
+        9, 1.0,
+        11, 1.4,
+        13, 1.8,
       ],
+      "line-opacity": 0.85,
+    },
+  });
+  map.addLayer({
+    id: LYR_CAM_LINE_HI,
+    type: "line",
+    source: SRC_CAM,
+    filter: ["in", ["get", "slug"], ["literal", []]],
+    paint: {
+      "line-color": "#6ea8fe",
+      "line-width": [
+        "interpolate",
+        ["linear"],
+        ["zoom"],
+        7, 1.6,
+        9, 2.2,
+        11, 2.8,
+        13, 3.4,
+      ],
+      "line-opacity": 1,
     },
   });
 
@@ -179,36 +202,32 @@ export function setColorMode(map: Map, mode: ColorMode): void {
 }
 
 /**
- * Highlight the active municipio outline. Pass null to clear.
+ * Highlight the selected municipios. Empty set = none highlighted.
  * Doesn't hide the others — for that, use `setSoloMode`.
  */
-export function setActiveCamSlug(map: Map, slug: string | null): void {
-  const s = slug ?? "__none__";
+export function setActiveCamSlugs(map: Map, slugs: Set<string>): void {
+  const arr = [...slugs];
   map.setPaintProperty(LYR_CAM_FILL, "fill-color", [
-    "case", ["==", ["get", "slug"], s], "#6ea8fe", "#3a4252",
+    "case", selectedExpr(arr), "#6ea8fe", "#3a4252",
   ]);
   map.setPaintProperty(LYR_CAM_FILL, "fill-opacity", [
-    "case", ["==", ["get", "slug"], s], 0.22, 0.06,
+    "case", selectedExpr(arr), 0.22, 0.04,
   ]);
-  map.setPaintProperty(LYR_CAM_LINE, "line-color", [
-    "case", ["==", ["get", "slug"], s], "#6ea8fe", "#5a6275",
-  ]);
-  map.setPaintProperty(LYR_CAM_LINE, "line-width", [
-    "case", ["==", ["get", "slug"], s], 1.4, 0.4,
-  ]);
+  map.setFilter(LYR_CAM_LINE_HI, ["in", ["get", "slug"], ["literal", arr]]);
 }
 
 /**
- * Solo mode: when true with a slug, hide all CAM outlines except the active one.
- * When false (or slug null), show every municipio.
+ * Solo mode: when slugs is non-empty, hide every CAM polygon that isn't in the
+ * set. When null or empty, show everything.
  */
-export function setSoloMode(map: Map, slug: string | null): void {
-  if (!slug) {
+export function setSoloMode(map: Map, slugs: Set<string> | null): void {
+  if (!slugs || slugs.size === 0) {
     map.setFilter(LYR_CAM_FILL, null);
     map.setFilter(LYR_CAM_LINE, null);
     return;
   }
-  const filter: maplibregl.FilterSpecification = ["==", ["get", "slug"], slug];
+  const arr = [...slugs];
+  const filter: maplibregl.FilterSpecification = ["in", ["get", "slug"], ["literal", arr]] as unknown as maplibregl.FilterSpecification;
   map.setFilter(LYR_CAM_FILL, filter);
   map.setFilter(LYR_CAM_LINE, filter);
 }

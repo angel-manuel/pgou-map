@@ -6,7 +6,7 @@ export function createMapDisplay(root) {
         <h2>Visualización del mapa</h2>
         <label style="display:flex;align-items:center;gap:8px;font-size:12px;cursor:pointer">
           <input type="checkbox" id="solo-toggle" style="margin:0">
-          Solo mostrar municipio seleccionado
+          Solo mostrar municipios seleccionados
         </label>
       `;
             cb = root.querySelector("#solo-toggle");
