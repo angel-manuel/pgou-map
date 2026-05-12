@@ -27,22 +27,27 @@ export function pilotFromIndex(e: CamIndexEntry): Municipio {
   if (span > 0.18) zoom = 11;
   if (span > 0.35) zoom = 10;
   if (span < 0.05) zoom = 13.5;
+  const isStub = e.stub === true;
   return {
     slug: e.slug,
     name: e.name,
     center: e.center,
     zoom,
-    dataStatus: "real",
-    dataNote: `SIT-CAM. ${e.feature_count} polígonos${e.documento ? ` · ${e.documento}` : ""}. Sólo clasificación, sin uso pormenorizado.`,
+    dataStatus: isStub ? "stub" : "real",
+    dataNote: isStub
+      ? `Sin datos PGOU publicados. ${e.documento ?? "STUB"}.`
+      : `SIT-CAM. ${e.feature_count} polígonos${e.documento ? ` · ${e.documento}` : ""}. Sólo clasificación, sin uso pormenorizado.`,
     versions: [{ version: "vigente", file: e.file }],
-    derived: [
-      // SIT data has no `calificacion`; only dormidos works derivable.
-      {
-        id: "sectores-dormidos",
-        file: `/data/cam/${e.slug}/sectores-dormidos.geojson`,
-        label: "Sectores dormidos",
-      },
-    ],
+    derived: isStub
+      ? []
+      : [
+          // SIT data has no `calificacion`; only dormidos works derivable.
+          {
+            id: "sectores-dormidos",
+            file: `/data/cam/${e.slug}/sectores-dormidos.geojson`,
+            label: "Sectores dormidos",
+          },
+        ],
   };
 }
 
@@ -168,10 +173,14 @@ export function createAllMunicipios(root: HTMLElement): AllMunicipios {
       btn.style.padding = "5px 8px";
       btn.setAttribute("data-slug", e.slug);
       const isOverride = e.slug in OVERRIDES;
-      const tag = isOverride
+      const isStub = e.stub === true;
+      const tag = isStub
+        ? `<span style="float:right;font-size:9px;color:#ffce5c;border:1px solid #ffce5c;padding:0 4px;border-radius:3px">stub</span>`
+        : isOverride
         ? `<span style="float:right;font-size:9px;color:#52b3a4;border:1px solid #52b3a4;padding:0 4px;border-radius:3px">+detalle</span>`
         : "";
-      btn.innerHTML = `${e.name}  · ${e.feature_count}${tag}`;
+      const count = isStub ? "—" : String(e.feature_count);
+      btn.innerHTML = `${e.name}  · ${count}${tag}`;
       btn.title = `${e.documento ?? ""} · CAM ${e.cam_code}`;
       btn.addEventListener("click", (ev) => {
         const me = ev as MouseEvent;

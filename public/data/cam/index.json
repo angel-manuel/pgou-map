@@ -1,36 +1,8 @@
 {
   "generated_at": "2026-05-12",
   "source": "SIT-CAM WFS — UsoDelSuelo:VPLA_V_CLASIFICACION (https://idem.comunidad.madrid/geosrvg/ows)",
-  "count": 176,
+  "count": 179,
   "municipios": [
-    {
-      "slug": "la-acebeda",
-      "name": "La Acebeda",
-      "cam_code": "001",
-      "file": "/data/cam/la-acebeda/vigente.geojson",
-      "center": [
-        -3.638,
-        41.0951
-      ],
-      "bbox": [
-        -3.6761,
-        41.0689,
-        -3.5998,
-        41.1213
-      ],
-      "feature_count": 24,
-      "bytes": 53958,
-      "documento": "NORMAS SUBSIDIARIAS",
-      "ley": "CM Ley 4/1984, E RD 1346/1976",
-      "siglas_counts": {
-        "SNUP": 22,
-        "SU": 2
-      },
-      "clasificacion_counts": {
-        "no-urbanizable-protegido": 22,
-        "urbano-consolidado": 2
-      }
-    },
     {
       "slug": "ajalvir",
       "name": "Ajalvir",
@@ -89,42 +61,6 @@
       "clasificacion_counts": {
         "no-urbanizable-protegido": 10,
         "urbano-consolidado": 1
-      }
-    },
-    {
-      "slug": "el-alamo",
-      "name": "El Álamo",
-      "cam_code": "004",
-      "file": "/data/cam/el-alamo/vigente.geojson",
-      "center": [
-        -3.9861,
-        40.233
-      ],
-      "bbox": [
-        -4.0268,
-        40.2095,
-        -3.9455,
-        40.2564
-      ],
-      "feature_count": 148,
-      "bytes": 201339,
-      "documento": "PLAN GENERAL",
-      "ley": "CM Ley 9/2001, E Ley 6/1998",
-      "siglas_counts": {
-        "SNUP": 103,
-        "SUBS": 13,
-        "SUC": 10,
-        "SNUP_A": 8,
-        "SUBNS": 7,
-        "SU": 4,
-        "SUNC": 3
-      },
-      "clasificacion_counts": {
-        "no-urbanizable-protegido": 111,
-        "urbano-consolidado": 14,
-        "urbanizable-sectorizado": 13,
-        "urbanizable-no-sectorizado": 7,
-        "urbano-no-consolidado": 3
       }
     },
     {
@@ -501,36 +437,6 @@
       }
     },
     {
-      "slug": "el-atazar",
-      "name": "El Atazar",
-      "cam_code": "016",
-      "file": "/data/cam/el-atazar/vigente.geojson",
-      "center": [
-        -3.4625,
-        40.9378
-      ],
-      "bbox": [
-        -3.5034,
-        40.9084,
-        -3.4216,
-        40.9673
-      ],
-      "feature_count": 17,
-      "bytes": 53140,
-      "documento": "NORMAS SUBSIDIARIAS",
-      "ley": "CM Ley 4/1984, E RD 1346/1976",
-      "siglas_counts": {
-        "SNUP": 14,
-        "SUBNS": 2,
-        "SU": 1
-      },
-      "clasificacion_counts": {
-        "no-urbanizable-protegido": 14,
-        "urbanizable-no-sectorizado": 2,
-        "urbano-consolidado": 1
-      }
-    },
-    {
       "slug": "batres",
       "name": "Batres",
       "cam_code": "017",
@@ -657,39 +563,6 @@
       }
     },
     {
-      "slug": "el-berrueco",
-      "name": "El Berrueco",
-      "cam_code": "021",
-      "file": "/data/cam/el-berrueco/vigente.geojson",
-      "center": [
-        -3.5579,
-        40.8785
-      ],
-      "bbox": [
-        -3.6026,
-        40.851,
-        -3.5132,
-        40.9059
-      ],
-      "feature_count": 61,
-      "bytes": 100723,
-      "documento": "NORMAS SUBSIDIARIAS",
-      "ley": "CM Ley 9/1995, E RDL 1/1992",
-      "siglas_counts": {
-        "SU": 28,
-        "SNUP": 19,
-        "SUBNS": 7,
-        "SU_A": 6,
-        "SUBS_A": 1
-      },
-      "clasificacion_counts": {
-        "urbano-consolidado": 34,
-        "no-urbanizable-protegido": 19,
-        "urbanizable-no-sectorizado": 7,
-        "urbanizable-sectorizado": 1
-      }
-    },
-    {
       "slug": "boadilla-del-monte",
       "name": "Boadilla del Monte",
       "cam_code": "022",
@@ -721,38 +594,6 @@
         "urbano-consolidado": 6,
         "urbanizable-no-sectorizado": 1,
         "urbanizable-sectorizado": 1
-      }
-    },
-    {
-      "slug": "el-boalo",
-      "name": "El Boalo",
-      "cam_code": "023",
-      "file": "/data/cam/el-boalo/vigente.geojson",
-      "center": [
-        -3.9005,
-        40.7084
-      ],
-      "bbox": [
-        -3.9686,
-        40.6486,
-        -3.8323,
-        40.7682
-      ],
-      "feature_count": 122,
-      "bytes": 178899,
-      "documento": "NORMAS SUBSIDIARIAS",
-      "ley": "CM Ley 9/1995, E RDL 1/1992",
-      "siglas_counts": {
-        "SNUP": 67,
-        "SU": 30,
-        "SUBS": 14,
-        "SUBS_A": 7,
-        "SU_A": 4
-      },
-      "clasificacion_counts": {
-        "no-urbanizable-protegido": 67,
-        "urbano-consolidado": 34,
-        "urbanizable-sectorizado": 21
       }
     },
     {
@@ -945,38 +786,6 @@
         "urbanizable-sectorizado": 7,
         "urbano-no-consolidado": 7,
         "urbanizable-no-sectorizado": 5
-      }
-    },
-    {
-      "slug": "la-cabrera",
-      "name": "La Cabrera",
-      "cam_code": "030",
-      "file": "/data/cam/la-cabrera/vigente.geojson",
-      "center": [
-        -3.6107,
-        40.8646
-      ],
-      "bbox": [
-        -3.6504,
-        40.8405,
-        -3.571,
-        40.8887
-      ],
-      "feature_count": 26,
-      "bytes": 56880,
-      "documento": "NORMAS SUBSIDIARIAS",
-      "ley": "CM Ley 9/1995, E RDL 1/1992",
-      "siglas_counts": {
-        "SNUP": 17,
-        "SUBS": 5,
-        "SUBNS": 3,
-        "SU": 1
-      },
-      "clasificacion_counts": {
-        "no-urbanizable-protegido": 17,
-        "urbanizable-sectorizado": 5,
-        "urbanizable-no-sectorizado": 3,
-        "urbano-consolidado": 1
       }
     },
     {
@@ -1264,6 +1073,68 @@
       }
     },
     {
+      "slug": "chapineria",
+      "name": "Chapinería",
+      "cam_code": "051",
+      "file": "/data/cam/chapineria/vigente.geojson",
+      "center": [
+        -4.2076,
+        40.3692
+      ],
+      "bbox": [
+        -4.2376,
+        40.3341,
+        -4.1776,
+        40.4042
+      ],
+      "feature_count": 62,
+      "bytes": 96900,
+      "documento": "NORMAS SUBSIDIARIAS",
+      "ley": "CM Ley 9/1995, E RDL 1/1992",
+      "siglas_counts": {
+        "SNUP": 39,
+        "SU": 20,
+        "SUBS": 3
+      },
+      "clasificacion_counts": {
+        "no-urbanizable-protegido": 39,
+        "urbano-consolidado": 20,
+        "urbanizable-sectorizado": 3
+      }
+    },
+    {
+      "slug": "chinchon",
+      "name": "Chinchón",
+      "cam_code": "052",
+      "file": "/data/cam/chinchon/vigente.geojson",
+      "center": [
+        -3.4829,
+        40.1585
+      ],
+      "bbox": [
+        -3.5809,
+        40.099,
+        -3.385,
+        40.218
+      ],
+      "feature_count": 60,
+      "bytes": 101676,
+      "documento": "NORMAS SUBSIDIARIAS",
+      "ley": "E RD 1346/1976",
+      "siglas_counts": {
+        "SNUP": 37,
+        "SUBNS": 18,
+        "SUNC": 3,
+        "SU": 2
+      },
+      "clasificacion_counts": {
+        "no-urbanizable-protegido": 37,
+        "urbanizable-no-sectorizado": 18,
+        "urbano-no-consolidado": 3,
+        "urbano-consolidado": 2
+      }
+    },
+    {
       "slug": "ciempozuelos",
       "name": "Ciempozuelos",
       "cam_code": "040",
@@ -1328,142 +1199,6 @@
         "urbanizable-no-sectorizado": 12,
         "urbanizable-sectorizado": 3,
         "urbano-consolidado": 2
-      }
-    },
-    {
-      "slug": "colmenar-del-arroyo",
-      "name": "Colmenar del Arroyo",
-      "cam_code": "042",
-      "file": "/data/cam/colmenar-del-arroyo/vigente.geojson",
-      "center": [
-        -4.1997,
-        40.4015
-      ],
-      "bbox": [
-        -4.2531,
-        40.3478,
-        -4.1463,
-        40.4552
-      ],
-      "feature_count": 16,
-      "bytes": 50572,
-      "documento": "NORMAS SUBSIDIARIAS",
-      "ley": "CM Ley 4/1984, E RD 1346/1976",
-      "siglas_counts": {
-        "SNUP": 13,
-        "SU": 2,
-        "SUBS": 1
-      },
-      "clasificacion_counts": {
-        "no-urbanizable-protegido": 13,
-        "urbano-consolidado": 2,
-        "urbanizable-sectorizado": 1
-      }
-    },
-    {
-      "slug": "colmenar-de-oreja",
-      "name": "Colmenar de Oreja",
-      "cam_code": "043",
-      "file": "/data/cam/colmenar-de-oreja/vigente.geojson",
-      "center": [
-        -3.4689,
-        40.085
-      ],
-      "bbox": [
-        -3.594,
-        40.0341,
-        -3.3438,
-        40.1358
-      ],
-      "feature_count": 13,
-      "bytes": 44104,
-      "documento": "NORMAS SUBSIDIARIAS",
-      "ley": "CM Ley 4/1984, E RDL 1/1992",
-      "siglas_counts": {
-        "SUBNS": 7,
-        "SNUP": 2,
-        "SU": 2,
-        "SUBS": 2
-      },
-      "clasificacion_counts": {
-        "urbanizable-no-sectorizado": 7,
-        "no-urbanizable-protegido": 2,
-        "urbano-consolidado": 2,
-        "urbanizable-sectorizado": 2
-      }
-    },
-    {
-      "slug": "colmenarejo",
-      "name": "Colmenarejo",
-      "cam_code": "044",
-      "file": "/data/cam/colmenarejo/vigente.geojson",
-      "center": [
-        -4.0194,
-        40.5349
-      ],
-      "bbox": [
-        -4.0544,
-        40.4856,
-        -3.9844,
-        40.5842
-      ],
-      "feature_count": 83,
-      "bytes": 128945,
-      "documento": "NORMAS SUBSIDIARIAS",
-      "ley": "CM Ley 9/1995, E RDL 1/1992",
-      "siglas_counts": {
-        "SNUP_A": 33,
-        "SNUP": 19,
-        "SG": 7,
-        "SUBNS_A": 6,
-        "SU_A": 5,
-        "SUBNS": 5,
-        "SUBS_A": 4,
-        "SU": 2,
-        "SG_A": 1,
-        "SUBS": 1
-      },
-      "clasificacion_counts": {
-        "no-urbanizable-protegido": 52,
-        "urbano-consolidado": 15,
-        "urbanizable-no-sectorizado": 11,
-        "urbanizable-sectorizado": 5
-      }
-    },
-    {
-      "slug": "colmenar-viejo",
-      "name": "Colmenar Viejo",
-      "cam_code": "045",
-      "file": "/data/cam/colmenar-viejo/vigente.geojson",
-      "center": [
-        -3.7247,
-        40.6616
-      ],
-      "bbox": [
-        -3.8651,
-        40.5913,
-        -3.5842,
-        40.732
-      ],
-      "feature_count": 368,
-      "bytes": 523512,
-      "documento": "PLAN GENERAL",
-      "ley": "CM Ley 9/1995, E Ley 6/1998",
-      "siglas_counts": {
-        "SNUP": 205,
-        "SUBNS_A": 75,
-        "SU_A": 36,
-        "SUBNS": 18,
-        "SU": 15,
-        "SNUP_A": 9,
-        "SUBS": 6,
-        "SUBS_A": 4
-      },
-      "clasificacion_counts": {
-        "no-urbanizable-protegido": 214,
-        "urbanizable-no-sectorizado": 93,
-        "urbano-consolidado": 51,
-        "urbanizable-sectorizado": 10
       }
     },
     {
@@ -1533,6 +1268,142 @@
         "urbano-consolidado": 27,
         "urbanizable-sectorizado": 6,
         "urbanizable-no-sectorizado": 2
+      }
+    },
+    {
+      "slug": "colmenar-viejo",
+      "name": "Colmenar Viejo",
+      "cam_code": "045",
+      "file": "/data/cam/colmenar-viejo/vigente.geojson",
+      "center": [
+        -3.7247,
+        40.6616
+      ],
+      "bbox": [
+        -3.8651,
+        40.5913,
+        -3.5842,
+        40.732
+      ],
+      "feature_count": 368,
+      "bytes": 523512,
+      "documento": "PLAN GENERAL",
+      "ley": "CM Ley 9/1995, E Ley 6/1998",
+      "siglas_counts": {
+        "SNUP": 205,
+        "SUBNS_A": 75,
+        "SU_A": 36,
+        "SUBNS": 18,
+        "SU": 15,
+        "SNUP_A": 9,
+        "SUBS": 6,
+        "SUBS_A": 4
+      },
+      "clasificacion_counts": {
+        "no-urbanizable-protegido": 214,
+        "urbanizable-no-sectorizado": 93,
+        "urbano-consolidado": 51,
+        "urbanizable-sectorizado": 10
+      }
+    },
+    {
+      "slug": "colmenar-de-oreja",
+      "name": "Colmenar de Oreja",
+      "cam_code": "043",
+      "file": "/data/cam/colmenar-de-oreja/vigente.geojson",
+      "center": [
+        -3.4689,
+        40.085
+      ],
+      "bbox": [
+        -3.594,
+        40.0341,
+        -3.3438,
+        40.1358
+      ],
+      "feature_count": 13,
+      "bytes": 44104,
+      "documento": "NORMAS SUBSIDIARIAS",
+      "ley": "CM Ley 4/1984, E RDL 1/1992",
+      "siglas_counts": {
+        "SUBNS": 7,
+        "SNUP": 2,
+        "SU": 2,
+        "SUBS": 2
+      },
+      "clasificacion_counts": {
+        "urbanizable-no-sectorizado": 7,
+        "no-urbanizable-protegido": 2,
+        "urbano-consolidado": 2,
+        "urbanizable-sectorizado": 2
+      }
+    },
+    {
+      "slug": "colmenar-del-arroyo",
+      "name": "Colmenar del Arroyo",
+      "cam_code": "042",
+      "file": "/data/cam/colmenar-del-arroyo/vigente.geojson",
+      "center": [
+        -4.1997,
+        40.4015
+      ],
+      "bbox": [
+        -4.2531,
+        40.3478,
+        -4.1463,
+        40.4552
+      ],
+      "feature_count": 16,
+      "bytes": 50572,
+      "documento": "NORMAS SUBSIDIARIAS",
+      "ley": "CM Ley 4/1984, E RD 1346/1976",
+      "siglas_counts": {
+        "SNUP": 13,
+        "SU": 2,
+        "SUBS": 1
+      },
+      "clasificacion_counts": {
+        "no-urbanizable-protegido": 13,
+        "urbano-consolidado": 2,
+        "urbanizable-sectorizado": 1
+      }
+    },
+    {
+      "slug": "colmenarejo",
+      "name": "Colmenarejo",
+      "cam_code": "044",
+      "file": "/data/cam/colmenarejo/vigente.geojson",
+      "center": [
+        -4.0194,
+        40.5349
+      ],
+      "bbox": [
+        -4.0544,
+        40.4856,
+        -3.9844,
+        40.5842
+      ],
+      "feature_count": 83,
+      "bytes": 128945,
+      "documento": "NORMAS SUBSIDIARIAS",
+      "ley": "CM Ley 9/1995, E RDL 1/1992",
+      "siglas_counts": {
+        "SNUP_A": 33,
+        "SNUP": 19,
+        "SG": 7,
+        "SUBNS_A": 6,
+        "SU_A": 5,
+        "SUBNS": 5,
+        "SUBS_A": 4,
+        "SU": 2,
+        "SG_A": 1,
+        "SUBS": 1
+      },
+      "clasificacion_counts": {
+        "no-urbanizable-protegido": 52,
+        "urbano-consolidado": 15,
+        "urbanizable-no-sectorizado": 11,
+        "urbanizable-sectorizado": 5
       }
     },
     {
@@ -1640,68 +1511,6 @@
       }
     },
     {
-      "slug": "chapineria",
-      "name": "Chapinería",
-      "cam_code": "051",
-      "file": "/data/cam/chapineria/vigente.geojson",
-      "center": [
-        -4.2076,
-        40.3692
-      ],
-      "bbox": [
-        -4.2376,
-        40.3341,
-        -4.1776,
-        40.4042
-      ],
-      "feature_count": 62,
-      "bytes": 96900,
-      "documento": "NORMAS SUBSIDIARIAS",
-      "ley": "CM Ley 9/1995, E RDL 1/1992",
-      "siglas_counts": {
-        "SNUP": 39,
-        "SU": 20,
-        "SUBS": 3
-      },
-      "clasificacion_counts": {
-        "no-urbanizable-protegido": 39,
-        "urbano-consolidado": 20,
-        "urbanizable-sectorizado": 3
-      }
-    },
-    {
-      "slug": "chinchon",
-      "name": "Chinchón",
-      "cam_code": "052",
-      "file": "/data/cam/chinchon/vigente.geojson",
-      "center": [
-        -3.4829,
-        40.1585
-      ],
-      "bbox": [
-        -3.5809,
-        40.099,
-        -3.385,
-        40.218
-      ],
-      "feature_count": 60,
-      "bytes": 101676,
-      "documento": "NORMAS SUBSIDIARIAS",
-      "ley": "E RD 1346/1976",
-      "siglas_counts": {
-        "SNUP": 37,
-        "SUBNS": 18,
-        "SUNC": 3,
-        "SU": 2
-      },
-      "clasificacion_counts": {
-        "no-urbanizable-protegido": 37,
-        "urbanizable-no-sectorizado": 18,
-        "urbano-no-consolidado": 3,
-        "urbano-consolidado": 2
-      }
-    },
-    {
       "slug": "daganzo-de-arriba",
       "name": "Daganzo de Arriba",
       "cam_code": "053",
@@ -1732,6 +1541,101 @@
         "urbanizable-no-sectorizado": 15,
         "urbanizable-sectorizado": 7,
         "urbano-consolidado": 4
+      }
+    },
+    {
+      "slug": "el-atazar",
+      "name": "El Atazar",
+      "cam_code": "016",
+      "file": "/data/cam/el-atazar/vigente.geojson",
+      "center": [
+        -3.4625,
+        40.9378
+      ],
+      "bbox": [
+        -3.5034,
+        40.9084,
+        -3.4216,
+        40.9673
+      ],
+      "feature_count": 17,
+      "bytes": 53140,
+      "documento": "NORMAS SUBSIDIARIAS",
+      "ley": "CM Ley 4/1984, E RD 1346/1976",
+      "siglas_counts": {
+        "SNUP": 14,
+        "SUBNS": 2,
+        "SU": 1
+      },
+      "clasificacion_counts": {
+        "no-urbanizable-protegido": 14,
+        "urbanizable-no-sectorizado": 2,
+        "urbano-consolidado": 1
+      }
+    },
+    {
+      "slug": "el-berrueco",
+      "name": "El Berrueco",
+      "cam_code": "021",
+      "file": "/data/cam/el-berrueco/vigente.geojson",
+      "center": [
+        -3.5579,
+        40.8785
+      ],
+      "bbox": [
+        -3.6026,
+        40.851,
+        -3.5132,
+        40.9059
+      ],
+      "feature_count": 61,
+      "bytes": 100723,
+      "documento": "NORMAS SUBSIDIARIAS",
+      "ley": "CM Ley 9/1995, E RDL 1/1992",
+      "siglas_counts": {
+        "SU": 28,
+        "SNUP": 19,
+        "SUBNS": 7,
+        "SU_A": 6,
+        "SUBS_A": 1
+      },
+      "clasificacion_counts": {
+        "urbano-consolidado": 34,
+        "no-urbanizable-protegido": 19,
+        "urbanizable-no-sectorizado": 7,
+        "urbanizable-sectorizado": 1
+      }
+    },
+    {
+      "slug": "el-boalo",
+      "name": "El Boalo",
+      "cam_code": "023",
+      "file": "/data/cam/el-boalo/vigente.geojson",
+      "center": [
+        -3.9005,
+        40.7084
+      ],
+      "bbox": [
+        -3.9686,
+        40.6486,
+        -3.8323,
+        40.7682
+      ],
+      "feature_count": 122,
+      "bytes": 178899,
+      "documento": "NORMAS SUBSIDIARIAS",
+      "ley": "CM Ley 9/1995, E RDL 1/1992",
+      "siglas_counts": {
+        "SNUP": 67,
+        "SU": 30,
+        "SUBS": 14,
+        "SUBS_A": 7,
+        "SU_A": 4
+      },
+      "clasificacion_counts": {
+        "no-urbanizable-protegido": 67,
+        "urbano-consolidado": 34,
+        "urbanizable-sectorizado": 21
       }
     },
     {
@@ -1767,6 +1671,106 @@
         "urbano-no-consolidado": 24,
         "urbanizable-sectorizado": 10,
         "urbanizable-no-sectorizado": 2
+      }
+    },
+    {
+      "slug": "el-molar",
+      "name": "El Molar",
+      "cam_code": "086",
+      "file": "/data/cam/el-molar/vigente.geojson",
+      "center": [
+        -3.5667,
+        40.6971
+      ],
+      "bbox": [
+        -3.608,
+        40.6436,
+        -3.5253,
+        40.7506
+      ],
+      "feature_count": 106,
+      "bytes": 150996,
+      "documento": "NORMAS SUBSIDIARIAS",
+      "ley": "CM Ley 9/1995, E RDL 1/1992",
+      "siglas_counts": {
+        "SU": 43,
+        "SNUP": 25,
+        "SUBS": 17,
+        "SUBNS": 11,
+        "SUBS_A": 9,
+        "SU_A": 1
+      },
+      "clasificacion_counts": {
+        "urbano-consolidado": 44,
+        "urbanizable-sectorizado": 26,
+        "no-urbanizable-protegido": 25,
+        "urbanizable-no-sectorizado": 11
+      }
+    },
+    {
+      "slug": "el-vellon",
+      "name": "El Vellón",
+      "cam_code": "168",
+      "file": "/data/cam/el-vellon/vigente.geojson",
+      "center": [
+        -3.5595,
+        40.7633
+      ],
+      "bbox": [
+        -3.6102,
+        40.7346,
+        -3.5088,
+        40.792
+      ],
+      "feature_count": 10,
+      "bytes": 20437,
+      "documento": "NORMAS COMPLEMENTARIAS",
+      "ley": "E RD 1346/1976",
+      "siglas_counts": {
+        "SU": 5,
+        "SUBNS": 4,
+        "SUBS": 1
+      },
+      "clasificacion_counts": {
+        "urbano-consolidado": 5,
+        "urbanizable-no-sectorizado": 4,
+        "urbanizable-sectorizado": 1
+      }
+    },
+    {
+      "slug": "el-alamo",
+      "name": "El Álamo",
+      "cam_code": "004",
+      "file": "/data/cam/el-alamo/vigente.geojson",
+      "center": [
+        -3.9861,
+        40.233
+      ],
+      "bbox": [
+        -4.0268,
+        40.2095,
+        -3.9455,
+        40.2564
+      ],
+      "feature_count": 148,
+      "bytes": 201339,
+      "documento": "PLAN GENERAL",
+      "ley": "CM Ley 9/2001, E Ley 6/1998",
+      "siglas_counts": {
+        "SNUP": 103,
+        "SUBS": 13,
+        "SUC": 10,
+        "SNUP_A": 8,
+        "SUBNS": 7,
+        "SU": 4,
+        "SUNC": 3
+      },
+      "clasificacion_counts": {
+        "no-urbanizable-protegido": 111,
+        "urbano-consolidado": 14,
+        "urbanizable-sectorizado": 13,
+        "urbanizable-no-sectorizado": 7,
+        "urbano-no-consolidado": 3
       }
     },
     {
@@ -2234,36 +2238,6 @@
       }
     },
     {
-      "slug": "la-hiruela",
-      "name": "La Hiruela",
-      "cam_code": "069",
-      "file": "/data/cam/la-hiruela/vigente.geojson",
-      "center": [
-        -3.4554,
-        41.069
-      ],
-      "bbox": [
-        -3.4858,
-        41.0427,
-        -3.4251,
-        41.0953
-      ],
-      "feature_count": 25,
-      "bytes": 46671,
-      "documento": "NORMAS SUBSIDIARIAS",
-      "ley": "CM Ley 4/1984, E RD 1346/1976",
-      "siglas_counts": {
-        "SNUP": 23,
-        "SU": 1,
-        "SUBNS": 1
-      },
-      "clasificacion_counts": {
-        "no-urbanizable-protegido": 23,
-        "urbano-consolidado": 1,
-        "urbanizable-no-sectorizado": 1
-      }
-    },
-    {
       "slug": "horcajo-de-la-sierra-aoslos",
       "name": "Horcajo de la Sierra-Aoslos",
       "cam_code": "070",
@@ -2386,6 +2360,159 @@
       }
     },
     {
+      "slug": "la-acebeda",
+      "name": "La Acebeda",
+      "cam_code": "001",
+      "file": "/data/cam/la-acebeda/vigente.geojson",
+      "center": [
+        -3.638,
+        41.0951
+      ],
+      "bbox": [
+        -3.6761,
+        41.0689,
+        -3.5998,
+        41.1213
+      ],
+      "feature_count": 24,
+      "bytes": 53958,
+      "documento": "NORMAS SUBSIDIARIAS",
+      "ley": "CM Ley 4/1984, E RD 1346/1976",
+      "siglas_counts": {
+        "SNUP": 22,
+        "SU": 2
+      },
+      "clasificacion_counts": {
+        "no-urbanizable-protegido": 22,
+        "urbano-consolidado": 2
+      }
+    },
+    {
+      "slug": "la-cabrera",
+      "name": "La Cabrera",
+      "cam_code": "030",
+      "file": "/data/cam/la-cabrera/vigente.geojson",
+      "center": [
+        -3.6107,
+        40.8646
+      ],
+      "bbox": [
+        -3.6504,
+        40.8405,
+        -3.571,
+        40.8887
+      ],
+      "feature_count": 26,
+      "bytes": 56880,
+      "documento": "NORMAS SUBSIDIARIAS",
+      "ley": "CM Ley 9/1995, E RDL 1/1992",
+      "siglas_counts": {
+        "SNUP": 17,
+        "SUBS": 5,
+        "SUBNS": 3,
+        "SU": 1
+      },
+      "clasificacion_counts": {
+        "no-urbanizable-protegido": 17,
+        "urbanizable-sectorizado": 5,
+        "urbanizable-no-sectorizado": 3,
+        "urbano-consolidado": 1
+      }
+    },
+    {
+      "slug": "la-hiruela",
+      "name": "La Hiruela",
+      "cam_code": "069",
+      "file": "/data/cam/la-hiruela/vigente.geojson",
+      "center": [
+        -3.4554,
+        41.069
+      ],
+      "bbox": [
+        -3.4858,
+        41.0427,
+        -3.4251,
+        41.0953
+      ],
+      "feature_count": 25,
+      "bytes": 46671,
+      "documento": "NORMAS SUBSIDIARIAS",
+      "ley": "CM Ley 4/1984, E RD 1346/1976",
+      "siglas_counts": {
+        "SNUP": 23,
+        "SU": 1,
+        "SUBNS": 1
+      },
+      "clasificacion_counts": {
+        "no-urbanizable-protegido": 23,
+        "urbano-consolidado": 1,
+        "urbanizable-no-sectorizado": 1
+      }
+    },
+    {
+      "slug": "la-serna-del-monte",
+      "name": "La Serna del Monte",
+      "cam_code": "138",
+      "file": "/data/cam/la-serna-del-monte/vigente.geojson",
+      "center": [
+        -3.6227,
+        41.0419
+      ],
+      "bbox": [
+        -3.6372,
+        41.013,
+        -3.6083,
+        41.0709
+      ],
+      "feature_count": 28,
+      "bytes": 43991,
+      "documento": "NORMAS SUBSIDIARIAS",
+      "ley": "CM Ley 4/1984, E RD 1346/1976",
+      "siglas_counts": {
+        "SNUP": 26,
+        "SU": 2
+      },
+      "clasificacion_counts": {
+        "no-urbanizable-protegido": 26,
+        "urbano-consolidado": 2
+      }
+    },
+    {
+      "slug": "las-rozas-de-madrid",
+      "name": "Las Rozas de Madrid",
+      "cam_code": "127",
+      "file": "/data/cam/las-rozas-de-madrid/vigente.geojson",
+      "center": [
+        -3.8915,
+        40.5248
+      ],
+      "bbox": [
+        -3.9498,
+        40.4751,
+        -3.8332,
+        40.5745
+      ],
+      "feature_count": 34,
+      "bytes": 76502,
+      "documento": "PLAN GENERAL",
+      "ley": "CM Ley 4/1984, E RDL 1/1992",
+      "siglas_counts": {
+        "SU": 19,
+        "SUBNS": 6,
+        "SNUP": 5,
+        "SNUP_A": 1,
+        "SU_A": 1,
+        "SUBS": 1,
+        "SUBS_A": 1
+      },
+      "clasificacion_counts": {
+        "urbano-consolidado": 20,
+        "no-urbanizable-protegido": 6,
+        "urbanizable-no-sectorizado": 6,
+        "urbanizable-sectorizado": 2
+      }
+    },
+    {
       "slug": "leganes",
       "name": "Leganés",
       "cam_code": "074",
@@ -2453,6 +2580,72 @@
       }
     },
     {
+      "slug": "los-molinos",
+      "name": "Los Molinos",
+      "cam_code": "087",
+      "file": "/data/cam/los-molinos/vigente.geojson",
+      "center": [
+        -4.0881,
+        40.7232
+      ],
+      "bbox": [
+        -4.1258,
+        40.6986,
+        -4.0504,
+        40.7477
+      ],
+      "feature_count": 29,
+      "bytes": 34813,
+      "documento": "PLAN GENERAL",
+      "ley": null,
+      "siglas_counts": {
+        "SNUP": 9,
+        "SUBNS": 9,
+        "SU": 8,
+        "SUBS": 3
+      },
+      "clasificacion_counts": {
+        "no-urbanizable-protegido": 9,
+        "urbanizable-no-sectorizado": 9,
+        "urbano-consolidado": 8,
+        "urbanizable-sectorizado": 3
+      }
+    },
+    {
+      "slug": "los-santos-de-la-humosa",
+      "name": "Los Santos de la Humosa",
+      "cam_code": "137",
+      "file": "/data/cam/los-santos-de-la-humosa/vigente.geojson",
+      "center": [
+        -3.2554,
+        40.5142
+      ],
+      "bbox": [
+        -3.312,
+        40.484,
+        -3.1988,
+        40.5443
+      ],
+      "feature_count": 65,
+      "bytes": 108480,
+      "documento": "NORMAS SUBSIDIARIAS",
+      "ley": "CM Ley 4/1984, E RDL 1/1992",
+      "siglas_counts": {
+        "SNUP": 48,
+        "SUBNS": 8,
+        "SU": 4,
+        "SUBS_A": 3,
+        "SG_A": 1,
+        "SUBS": 1
+      },
+      "clasificacion_counts": {
+        "no-urbanizable-protegido": 48,
+        "urbanizable-no-sectorizado": 8,
+        "urbano-consolidado": 5,
+        "urbanizable-sectorizado": 4
+      }
+    },
+    {
       "slug": "lozoya",
       "name": "Lozoya",
       "cam_code": "076",
@@ -2481,6 +2674,25 @@
         "urbanizable-no-sectorizado": 4,
         "urbano-consolidado": 1
       }
+    },
+    {
+      "slug": "lozoyuela-navas-sieteiglesias",
+      "name": "Lozoyuela-Navas-Sieteiglesias",
+      "cam_code": "STUB",
+      "file": "/data/cam/lozoyuela-navas-sieteiglesias/vigente.geojson",
+      "center": [
+        -3.6217959,
+        40.92064755
+      ],
+      "bbox": [
+        -3.6753309,
+        40.8797478,
+        -3.5682609,
+        40.9615473
+      ],
+      "feature_count": 1,
+      "documento": "STUB — SIT-CAM no publica capa VPLA",
+      "stub": true
     },
     {
       "slug": "madarcos",
@@ -2710,72 +2922,6 @@
         "no-urbanizable-protegido": 120,
         "urbano-consolidado": 34,
         "urbanizable-sectorizado": 5
-      }
-    },
-    {
-      "slug": "el-molar",
-      "name": "El Molar",
-      "cam_code": "086",
-      "file": "/data/cam/el-molar/vigente.geojson",
-      "center": [
-        -3.5667,
-        40.6971
-      ],
-      "bbox": [
-        -3.608,
-        40.6436,
-        -3.5253,
-        40.7506
-      ],
-      "feature_count": 106,
-      "bytes": 150996,
-      "documento": "NORMAS SUBSIDIARIAS",
-      "ley": "CM Ley 9/1995, E RDL 1/1992",
-      "siglas_counts": {
-        "SU": 43,
-        "SNUP": 25,
-        "SUBS": 17,
-        "SUBNS": 11,
-        "SUBS_A": 9,
-        "SU_A": 1
-      },
-      "clasificacion_counts": {
-        "urbano-consolidado": 44,
-        "urbanizable-sectorizado": 26,
-        "no-urbanizable-protegido": 25,
-        "urbanizable-no-sectorizado": 11
-      }
-    },
-    {
-      "slug": "los-molinos",
-      "name": "Los Molinos",
-      "cam_code": "087",
-      "file": "/data/cam/los-molinos/vigente.geojson",
-      "center": [
-        -4.0881,
-        40.7232
-      ],
-      "bbox": [
-        -4.1258,
-        40.6986,
-        -4.0504,
-        40.7477
-      ],
-      "feature_count": 29,
-      "bytes": 34813,
-      "documento": "PLAN GENERAL",
-      "ley": null,
-      "siglas_counts": {
-        "SNUP": 9,
-        "SUBNS": 9,
-        "SU": 8,
-        "SUBS": 3
-      },
-      "clasificacion_counts": {
-        "no-urbanizable-protegido": 9,
-        "urbanizable-no-sectorizado": 9,
-        "urbano-consolidado": 8,
-        "urbanizable-sectorizado": 3
       }
     },
     {
@@ -3672,6 +3818,25 @@
       }
     },
     {
+      "slug": "puentes-viejas",
+      "name": "Puentes Viejas",
+      "cam_code": "STUB",
+      "file": "/data/cam/puentes-viejas/vigente.geojson",
+      "center": [
+        -3.56108825,
+        40.968752800000004
+      ],
+      "bbox": [
+        -3.6293803,
+        40.903601,
+        -3.4927962,
+        41.0339046
+      ],
+      "feature_count": 1,
+      "documento": "STUB — SIT-CAM no publica capa VPLA",
+      "stub": true
+    },
+    {
       "slug": "quijorna",
       "name": "Quijorna",
       "cam_code": "119",
@@ -3921,41 +4086,6 @@
       }
     },
     {
-      "slug": "las-rozas-de-madrid",
-      "name": "Las Rozas de Madrid",
-      "cam_code": "127",
-      "file": "/data/cam/las-rozas-de-madrid/vigente.geojson",
-      "center": [
-        -3.8915,
-        40.5248
-      ],
-      "bbox": [
-        -3.9498,
-        40.4751,
-        -3.8332,
-        40.5745
-      ],
-      "feature_count": 34,
-      "bytes": 76502,
-      "documento": "PLAN GENERAL",
-      "ley": "CM Ley 4/1984, E RDL 1/1992",
-      "siglas_counts": {
-        "SU": 19,
-        "SUBNS": 6,
-        "SNUP": 5,
-        "SNUP_A": 1,
-        "SU_A": 1,
-        "SUBS": 1,
-        "SUBS_A": 1
-      },
-      "clasificacion_counts": {
-        "urbano-consolidado": 20,
-        "no-urbanizable-protegido": 6,
-        "urbanizable-no-sectorizado": 6,
-        "urbanizable-sectorizado": 2
-      }
-    },
-    {
       "slug": "rozas-de-puerto-real",
       "name": "Rozas de Puerto Real",
       "cam_code": "128",
@@ -4089,39 +4219,6 @@
       }
     },
     {
-      "slug": "san-martin-de-la-vega",
-      "name": "San Martín de la Vega",
-      "cam_code": "132",
-      "file": "/data/cam/san-martin-de-la-vega/vigente.geojson",
-      "center": [
-        -3.5632,
-        40.2433
-      ],
-      "bbox": [
-        -3.6437,
-        40.1896,
-        -3.4827,
-        40.297
-      ],
-      "feature_count": 32,
-      "bytes": 78566,
-      "documento": "NORMAS SUBSIDIARIAS",
-      "ley": "CM Ley 9/1995, E RDL 1/1992",
-      "siglas_counts": {
-        "SNUP": 21,
-        "SUBNS": 5,
-        "SU": 3,
-        "SUBS": 2,
-        "SG": 1
-      },
-      "clasificacion_counts": {
-        "no-urbanizable-protegido": 21,
-        "urbanizable-no-sectorizado": 5,
-        "urbano-consolidado": 4,
-        "urbanizable-sectorizado": 2
-      }
-    },
-    {
       "slug": "san-martin-de-valdeiglesias",
       "name": "San Martín de Valdeiglesias",
       "cam_code": "133",
@@ -4155,6 +4252,39 @@
         "urbano-no-consolidado": 37,
         "urbanizable-sectorizado": 12,
         "urbanizable-no-sectorizado": 6
+      }
+    },
+    {
+      "slug": "san-martin-de-la-vega",
+      "name": "San Martín de la Vega",
+      "cam_code": "132",
+      "file": "/data/cam/san-martin-de-la-vega/vigente.geojson",
+      "center": [
+        -3.5632,
+        40.2433
+      ],
+      "bbox": [
+        -3.6437,
+        40.1896,
+        -3.4827,
+        40.297
+      ],
+      "feature_count": 32,
+      "bytes": 78566,
+      "documento": "NORMAS SUBSIDIARIAS",
+      "ley": "CM Ley 9/1995, E RDL 1/1992",
+      "siglas_counts": {
+        "SNUP": 21,
+        "SUBNS": 5,
+        "SU": 3,
+        "SUBS": 2,
+        "SG": 1
+      },
+      "clasificacion_counts": {
+        "no-urbanizable-protegido": 21,
+        "urbanizable-no-sectorizado": 5,
+        "urbano-consolidado": 4,
+        "urbanizable-sectorizado": 2
       }
     },
     {
@@ -4251,68 +4381,6 @@
         "urbanizable-no-sectorizado": 6,
         "urbano-consolidado": 2,
         "urbanizable-sectorizado": 2
-      }
-    },
-    {
-      "slug": "los-santos-de-la-humosa",
-      "name": "Los Santos de la Humosa",
-      "cam_code": "137",
-      "file": "/data/cam/los-santos-de-la-humosa/vigente.geojson",
-      "center": [
-        -3.2554,
-        40.5142
-      ],
-      "bbox": [
-        -3.312,
-        40.484,
-        -3.1988,
-        40.5443
-      ],
-      "feature_count": 65,
-      "bytes": 108480,
-      "documento": "NORMAS SUBSIDIARIAS",
-      "ley": "CM Ley 4/1984, E RDL 1/1992",
-      "siglas_counts": {
-        "SNUP": 48,
-        "SUBNS": 8,
-        "SU": 4,
-        "SUBS_A": 3,
-        "SG_A": 1,
-        "SUBS": 1
-      },
-      "clasificacion_counts": {
-        "no-urbanizable-protegido": 48,
-        "urbanizable-no-sectorizado": 8,
-        "urbano-consolidado": 5,
-        "urbanizable-sectorizado": 4
-      }
-    },
-    {
-      "slug": "la-serna-del-monte",
-      "name": "La Serna del Monte",
-      "cam_code": "138",
-      "file": "/data/cam/la-serna-del-monte/vigente.geojson",
-      "center": [
-        -3.6227,
-        41.0419
-      ],
-      "bbox": [
-        -3.6372,
-        41.013,
-        -3.6083,
-        41.0709
-      ],
-      "feature_count": 28,
-      "bytes": 43991,
-      "documento": "NORMAS SUBSIDIARIAS",
-      "ley": "CM Ley 4/1984, E RD 1346/1976",
-      "siglas_counts": {
-        "SNUP": 26,
-        "SU": 2
-      },
-      "clasificacion_counts": {
-        "no-urbanizable-protegido": 26,
-        "urbano-consolidado": 2
       }
     },
     {
@@ -4571,37 +4639,6 @@
       }
     },
     {
-      "slug": "torrejon-de-la-calzada",
-      "name": "Torrejón de la Calzada",
-      "cam_code": "149",
-      "file": "/data/cam/torrejon-de-la-calzada/vigente.geojson",
-      "center": [
-        -3.7996,
-        40.1992
-      ],
-      "bbox": [
-        -3.8211,
-        40.1754,
-        -3.7781,
-        40.2229
-      ],
-      "feature_count": 42,
-      "bytes": 50860,
-      "documento": "NORMAS SUBSIDIARIAS",
-      "ley": "CM Ley 4/1984, E RDL 1/1992",
-      "siglas_counts": {
-        "SNUP": 24,
-        "SUBS": 15,
-        "SU": 2,
-        "SG": 1
-      },
-      "clasificacion_counts": {
-        "no-urbanizable-protegido": 24,
-        "urbanizable-sectorizado": 15,
-        "urbano-consolidado": 3
-      }
-    },
-    {
       "slug": "torrejon-de-velasco",
       "name": "Torrejón de Velasco",
       "cam_code": "150",
@@ -4632,6 +4669,37 @@
         "urbanizable-no-sectorizado": 22,
         "urbanizable-sectorizado": 9,
         "urbano-consolidado": 6
+      }
+    },
+    {
+      "slug": "torrejon-de-la-calzada",
+      "name": "Torrejón de la Calzada",
+      "cam_code": "149",
+      "file": "/data/cam/torrejon-de-la-calzada/vigente.geojson",
+      "center": [
+        -3.7996,
+        40.1992
+      ],
+      "bbox": [
+        -3.8211,
+        40.1754,
+        -3.7781,
+        40.2229
+      ],
+      "feature_count": 42,
+      "bytes": 50860,
+      "documento": "NORMAS SUBSIDIARIAS",
+      "ley": "CM Ley 4/1984, E RDL 1/1992",
+      "siglas_counts": {
+        "SNUP": 24,
+        "SUBS": 15,
+        "SU": 2,
+        "SG": 1
+      },
+      "clasificacion_counts": {
+        "no-urbanizable-protegido": 24,
+        "urbanizable-sectorizado": 15,
+        "urbano-consolidado": 3
       }
     },
     {
@@ -4765,6 +4833,25 @@
         "urbano-consolidado": 3,
         "urbanizable-sectorizado": 2
       }
+    },
+    {
+      "slug": "tres-cantos",
+      "name": "Tres Cantos",
+      "cam_code": "STUB",
+      "file": "/data/cam/tres-cantos/vigente.geojson",
+      "center": [
+        -3.7391585000000003,
+        40.6137625
+      ],
+      "bbox": [
+        -3.8115964,
+        40.5821178,
+        -3.6667206,
+        40.6454072
+      ],
+      "feature_count": 1,
+      "documento": "STUB — SIT-CAM no publica capa VPLA",
+      "stub": true
     },
     {
       "slug": "valdaracete",
@@ -5189,36 +5276,6 @@
       }
     },
     {
-      "slug": "el-vellon",
-      "name": "El Vellón",
-      "cam_code": "168",
-      "file": "/data/cam/el-vellon/vigente.geojson",
-      "center": [
-        -3.5595,
-        40.7633
-      ],
-      "bbox": [
-        -3.6102,
-        40.7346,
-        -3.5088,
-        40.792
-      ],
-      "feature_count": 10,
-      "bytes": 20437,
-      "documento": "NORMAS COMPLEMENTARIAS",
-      "ley": "E RD 1346/1976",
-      "siglas_counts": {
-        "SU": 5,
-        "SUBNS": 4,
-        "SUBS": 1
-      },
-      "clasificacion_counts": {
-        "urbano-consolidado": 5,
-        "urbanizable-no-sectorizado": 4,
-        "urbanizable-sectorizado": 1
-      }
-    },
-    {
       "slug": "venturada",
       "name": "Venturada",
       "cam_code": "169",
@@ -5252,36 +5309,6 @@
       }
     },
     {
-      "slug": "villaconejos",
-      "name": "Villaconejos",
-      "cam_code": "170",
-      "file": "/data/cam/villaconejos/vigente.geojson",
-      "center": [
-        -3.5002,
-        40.1124
-      ],
-      "bbox": [
-        -3.5494,
-        40.0849,
-        -3.451,
-        40.14
-      ],
-      "feature_count": 25,
-      "bytes": 43532,
-      "documento": "NORMAS SUBSIDIARIAS",
-      "ley": "E RD 1346/1976",
-      "siglas_counts": {
-        "SNUP": 18,
-        "SUBNS": 6,
-        "SUC": 1
-      },
-      "clasificacion_counts": {
-        "no-urbanizable-protegido": 18,
-        "urbanizable-no-sectorizado": 6,
-        "urbano-consolidado": 1
-      }
-    },
-    {
       "slug": "villa-del-prado",
       "name": "Villa del Prado",
       "cam_code": "171",
@@ -5312,6 +5339,36 @@
         "urbano-no-consolidado": 12,
         "urbano-consolidado": 5,
         "urbanizable-sectorizado": 4
+      }
+    },
+    {
+      "slug": "villaconejos",
+      "name": "Villaconejos",
+      "cam_code": "170",
+      "file": "/data/cam/villaconejos/vigente.geojson",
+      "center": [
+        -3.5002,
+        40.1124
+      ],
+      "bbox": [
+        -3.5494,
+        40.0849,
+        -3.451,
+        40.14
+      ],
+      "feature_count": 25,
+      "bytes": 43532,
+      "documento": "NORMAS SUBSIDIARIAS",
+      "ley": "E RD 1346/1976",
+      "siglas_counts": {
+        "SNUP": 18,
+        "SUBNS": 6,
+        "SUC": 1
+      },
+      "clasificacion_counts": {
+        "no-urbanizable-protegido": 18,
+        "urbanizable-no-sectorizado": 6,
+        "urbano-consolidado": 1
       }
     },
     {
@@ -5449,6 +5506,36 @@
       }
     },
     {
+      "slug": "villanueva-de-perales",
+      "name": "Villanueva de Perales",
+      "cam_code": "178",
+      "file": "/data/cam/villanueva-de-perales/vigente.geojson",
+      "center": [
+        -4.0859,
+        40.3692
+      ],
+      "bbox": [
+        -4.1366,
+        40.3344,
+        -4.0352,
+        40.4039
+      ],
+      "feature_count": 183,
+      "bytes": 286658,
+      "documento": "NORMAS SUBSIDIARIAS",
+      "ley": "CM Ley 4/1984, CM Ley 9/1995, CM Ley 20/1997",
+      "siglas_counts": {
+        "SNUP": 178,
+        "SUBS": 4,
+        "SU": 1
+      },
+      "clasificacion_counts": {
+        "no-urbanizable-protegido": 178,
+        "urbanizable-sectorizado": 4,
+        "urbano-consolidado": 1
+      }
+    },
+    {
       "slug": "villanueva-de-la-canada",
       "name": "Villanueva de la Cañada",
       "cam_code": "176",
@@ -5516,36 +5603,6 @@
         "urbanizable-no-sectorizado": 23,
         "urbanizable-sectorizado": 9,
         "urbano-consolidado": 6
-      }
-    },
-    {
-      "slug": "villanueva-de-perales",
-      "name": "Villanueva de Perales",
-      "cam_code": "178",
-      "file": "/data/cam/villanueva-de-perales/vigente.geojson",
-      "center": [
-        -4.0859,
-        40.3692
-      ],
-      "bbox": [
-        -4.1366,
-        40.3344,
-        -4.0352,
-        40.4039
-      ],
-      "feature_count": 183,
-      "bytes": 286658,
-      "documento": "NORMAS SUBSIDIARIAS",
-      "ley": "CM Ley 4/1984, CM Ley 9/1995, CM Ley 20/1997",
-      "siglas_counts": {
-        "SNUP": 178,
-        "SUBS": 4,
-        "SU": 1
-      },
-      "clasificacion_counts": {
-        "no-urbanizable-protegido": 178,
-        "urbanizable-sectorizado": 4,
-        "urbano-consolidado": 1
       }
     },
     {

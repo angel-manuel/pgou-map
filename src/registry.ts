@@ -68,4 +68,5 @@ export interface CamIndexEntry {
   bbox: [number, number, number, number];
   feature_count: number;
   documento: string | null;
+  stub?: boolean;
 }
