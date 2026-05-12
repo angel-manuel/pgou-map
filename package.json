@@ -1,0 +1,19 @@
+{
+  "name": "pgou-map",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "maplibre-gl": "^4.7.1"
+  },
+  "devDependencies": {
+    "@types/geojson": "^7946.0.14",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}

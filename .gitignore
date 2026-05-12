@@ -1,0 +1,20 @@
+node_modules/
+dist/
+*.log
+.vite/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Data pipeline cache (downloaded source data, regenerable)
+data-pipeline/.cache/
+
+# Vercel
+.vercel/
+
+# Env
+.env
+.env.local
