@@ -41,12 +41,12 @@ export interface ZonaProperties {
 }
 
 export const CLASIFICACION_COLOR: Record<Clasificacion, string> = {
-  "urbano-consolidado": "#c97b63",
-  "urbano-no-consolidado": "#e0a07a",
-  "urbanizable-sectorizado": "#d4c66a",
-  "urbanizable-no-sectorizado": "#e8df9d",
-  "no-urbanizable-comun": "#a3b18a",
-  "no-urbanizable-protegido": "#588157",
+  "urbano-consolidado": "#588157",
+  "urbano-no-consolidado": "#a3b18a",
+  "urbanizable-sectorizado": "#e8df9d",
+  "urbanizable-no-sectorizado": "#d4c66a",
+  "no-urbanizable-comun": "#e0a07a",
+  "no-urbanizable-protegido": "#c97b63",
 };
 
 export const CALIFICACION_COLOR: Record<Calificacion, string> = {
